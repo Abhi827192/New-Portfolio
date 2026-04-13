@@ -1,0 +1,100 @@
+#certifications {
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* 🔥 3 CARDS IN ONE LINE */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.cert-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #333;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  border-color: orange;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* HEADER */
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-icon {
+  font-size: 28px;
+  color: orange;
+}
+
+/* DATE */
+.cert-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: orange;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* TEXT */
+.cert-desc {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+/* BUTTON */
+.download-btn {
+  margin-top: 15px;
+  background: orange;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #ff9900;
+  transform: scale(1.05);
+}
+
+/* 📱 TABLET */
+@media (max-width: 992px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
