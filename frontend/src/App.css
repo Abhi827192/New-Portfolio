@@ -1,0 +1,14 @@
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+section {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+}
