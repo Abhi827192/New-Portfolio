@@ -3,33 +3,32 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = ({ activeFilter, setActiveFilter }) => {
-  const filters = ['All','MERN'];
+  // Added 'Data Analytics' to filters
+  const filters = ['All', 'MERN', 'Data Analytics'];
   
   const projects = [
-    
     {
       id: 2,
       title: 'Zoom Clone',
       date: 'May 2025',
       description: 'Video conferencing web app with real-time meetings',
       tech: ['React', 'Node.js', 'WebRTC', 'Socket.io'],
-      category: [],
+      category: ['MERN'],
       image: '../23.png',
       liveLink: 'https://zoom6.onrender.com',
       githubLink: 'https://github.com/Abhi827192/Zoom'
     },
     {
       id: 1,
-    title: 'Agriculture Production Dashboard',
-    date: 'April 2026',
-    description: 'Interactive Power BI dashboard analyzing crop production, area trends, rainfall, and temperature insights across states.',
-    tech: ['Power BI', 'Data Visualization', 'DAX', 'Excel', 'Data Analysis'],
-    category: ['Data Analytics'],
-    image: '../agriculture-dashboard.png', 
-    liveLink: '#',
-    githubLink: 'https://github.com/Abhi827192/powerbi-sales-dashboard'
+      title: 'Agriculture Production Dashboard',
+      date: 'April 2026',
+      description: 'Interactive Power BI dashboard analyzing crop production, area trends, rainfall, and temperature insights across states.',
+      tech: ['Power BI', 'Data Visualization', 'DAX', 'Excel', 'Data Analysis'],
+      category: ['Data Analytics'],
+      image: '../agriculture-dashboard.png', 
+      liveLink: '#', // No live link for Power BI
+      githubLink: 'https://github.com/Abhi827192/powerbi-sales-dashboard'
     }
-    
   ];
 
   const filteredProjects = activeFilter === 'All' 
@@ -60,10 +59,13 @@ const Projects = ({ activeFilter, setActiveFilter }) => {
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
                   <div className="project-links">
-                    <a href={project.liveLink} className="project-link">
-                      <FaExternalLinkAlt /> Live
-                    </a>
-                    <a href={project.githubLink} className="project-link">
+                    {/* Only show Live link if it's not '#' */}
+                    {project.liveLink !== '#' && (
+                      <a href={project.liveLink} target="_blank" rel="noreferrer" className="project-link">
+                        <FaExternalLinkAlt /> Live
+                      </a>
+                    )}
+                    <a href={project.githubLink} target="_blank" rel="noreferrer" className="project-link">
                       <FaGithub /> Code
                     </a>
                   </div>

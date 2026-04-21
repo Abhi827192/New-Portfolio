@@ -32,7 +32,7 @@ const Hero = () => {
               </a>
 
               <a 
-                href="https://drive.google.com/file/d/1cxZrNK9Lt8DB9C2wIh7EH67UYaJRkbXf/view?usp=sharing" 
+                href="https://drive.google.com/file/d/14YYUWtqBfo_iBFSAttFwsPFWunTSq5kj/view?usp=sharing" 
                 className="btn btn-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
