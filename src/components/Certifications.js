@@ -22,9 +22,9 @@ const Certifications = () => {
     {
       title: 'Data Science & AI Internship',
       issuer: 'Vizztal Academy',
-      date: 'Feb–Mar 2025',
+      date: 'Feb–Apr 2025',
       description: 'Hands-on training in Python, Excel, SQL, Power BI and AI fundamentals',
-      link: 'https://drive.google.com/file/d/14aufmEBKbBUvqWgBXGUq57Fq25rQoF1T/view?usp=sharing'
+      link: 'https://drive.google.com/file/d/1zZI5IRtHzrlEYxOqnyIu6f-HPGq7s2Fc/view?usp=sharing'
     }
   ];
 

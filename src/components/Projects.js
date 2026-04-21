@@ -26,6 +26,7 @@ const Projects = ({ activeFilter, setActiveFilter }) => {
     tech: ['Power BI', 'Data Visualization', 'DAX', 'Excel', 'Data Analysis'],
     category: ['Data Analytics'],
     image: '../agriculture-dashboard.png', 
+    liveLink: '#',
     githubLink: 'https://github.com/Abhi827192/powerbi-sales-dashboard'
     }
     
