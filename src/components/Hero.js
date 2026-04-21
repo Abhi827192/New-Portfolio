@@ -48,21 +48,21 @@ const Hero = () => {
 
               <img 
                 src="../profile.png" 
-                alt="Abhishek Kumar - Data Analyst & Full Stack Developer" 
+                alt="Abhishek Kumar" 
                 className="profile-image"
               />
 
-              {/* Balanced Badges */}
+              {/* Floating Badges */}
               <div className="tech-badge">
-                <span>DATA</span>
+                <span>DATA ANALYTICS</span>
               </div>
 
               <div className="tech-badge bio-badge">
-                <span>BIOTECH</span>
+                <span>BIOTECHNOLOGY</span>
               </div>
 
               <div className="tech-badge it-badge">
-                <span>MERN</span>
+                <span>FULL STACK</span>
               </div>
 
             </div>
