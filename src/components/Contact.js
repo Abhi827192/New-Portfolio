@@ -53,32 +53,53 @@ const Contact = () => {
         
         <div className="contact-content">
           
-          {/* LEFT SIDE */}
+          {/* LEFT SIDE: ALL CLICKABLE ICONS */}
           <div className="contact-info">
+            
+            {/* LOCATION ITEM */}
             <div className="contact-item">
-              <div className="contact-icon"><FaMapMarkerAlt /></div>
+              <a 
+                href="https://www.google.com/maps/search/Sidroll+Namkum+Ranchi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="contact-icon clickable-icon">
+                  <FaMapMarkerAlt />
+                </div>
+              </a>
               <div>
                 <h3>Location</h3>
                 <p>Sidroll Namkum, Ranchi</p>
               </div>
             </div>
             
+            {/* EMAIL ITEM */}
             <div className="contact-item">
-              <div className="contact-icon"><FaEnvelope /></div>
+              <a href="mailto:abhishekkumar923428@gmail.com">
+                <div className="contact-icon clickable-icon">
+                  <FaEnvelope />
+                </div>
+              </a>
               <div>
                 <h3>Email</h3>
                 <p>abhishekkumar923428@gmail.com</p>
               </div>
             </div>
             
+            {/* PHONE ITEM */}
             <div className="contact-item">
-              <div className="contact-icon"><FaPhone /></div>
+              <a href="tel:+918271928931">
+                <div className="contact-icon clickable-icon">
+                  <FaPhone />
+                </div>
+              </a>
               <div>
                 <h3>Phone</h3>
                 <p>+91 8271928931</p>
               </div>
             </div>
 
+            {/* SOCIAL LINKS */}
             <div className="contact-social">
               <a href="https://www.linkedin.com/in/abhishek-kumar-977623271/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
@@ -89,10 +110,9 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* RIGHT SIDE FORM */}
+          {/* RIGHT SIDE: FORM */}
           <div className="contact-form-container">
             <form ref={form} className="contact-form" onSubmit={sendEmail}>
-              
               <div className="form-group">
                 <input
                   type="text"
@@ -115,7 +135,6 @@ const Contact = () => {
                 />
               </div>
               
-              
               <div className="form-group">
                 <textarea
                   name="message"
@@ -127,7 +146,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               
-              <button type="submit" disabled={loading}>
+              <button type="submit" className="submit-btn" disabled={loading}>
                 {loading ? 'Sending...' : 'Send Message'}
               </button>
 

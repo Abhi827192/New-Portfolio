@@ -4,7 +4,7 @@ import './Projects.css';
 
 const Projects = ({ activeFilter, setActiveFilter }) => {
   // Added 'Data Analytics' to filters
-  const filters = ['All', 'MERN', 'Data Analytics'];
+  const filters = ['All', 'FULL STACK', 'Data Analytics'];
   
   const projects = [
     {
@@ -13,7 +13,7 @@ const Projects = ({ activeFilter, setActiveFilter }) => {
       date: 'May 2025',
       description: 'Video conferencing web app with real-time meetings',
       tech: ['React', 'Node.js', 'WebRTC', 'Socket.io'],
-      category: ['MERN'],
+      category: ['FULL STACK'],
       image: '../23.png',
       liveLink: 'https://zoom6.onrender.com',
       githubLink: 'https://github.com/Abhi827192/Zoom'
