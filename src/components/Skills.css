@@ -9,6 +9,14 @@
   padding: 2.5rem 2rem;
 }
 
+.service-card:hover{
+    transform: translateY(-10px);
+  border-color: rgba(251, 191, 36, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+              0 0 20px rgba(251, 191, 36, 0.1);
+
+}
+
 .service-icon {
   font-size: 3rem;
   color: var(--accent-yellow);

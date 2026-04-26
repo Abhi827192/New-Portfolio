@@ -1,6 +1,6 @@
 .contact {
     padding: 80px 0;
-    background-color: #0f172a;
+    background-color: #000000;
 }
 
 .container {
@@ -62,9 +62,15 @@
 
 .clickable-icon:hover {
     background: #fbbf24;
-    color: #0f172a;
+    color: #000000;
     transform: scale(1.1) rotate(5deg);
     box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+}
+.clickable-icon1:hover {
+    background: rgba(15, 23, 42, 0.8);
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(1, 255, 149, 0.4);
 }
 
 .contact-item h3 {
@@ -110,7 +116,7 @@
 
 /* FORM STYLING */
 .contact-form-container {
-    background: rgba(30, 41, 59, 0.5);
+    background: rgba(30, 41, 59, 0.3);
     padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);

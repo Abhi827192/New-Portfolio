@@ -1,6 +1,6 @@
 .about {
   padding: 100px 0;
-  background: #0f172a; /* Dark sleek background */
+  background: #000000; /* Dark sleek background */
   overflow: hidden;
 }
 
@@ -37,7 +37,7 @@
 
 /* CATEGORY CARD HOVER EFFECT */
 .skills-category {
-  background: rgba(30, 41, 59, 0.5); /* Glass effect */
+  background: rgba(30, 41, 59, 0.3); /* Glass effect */
   padding: 2.5rem;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -51,7 +51,6 @@
   border-color: rgba(251, 191, 36, 0.4);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
               0 0 20px rgba(251, 191, 36, 0.1);
-  background: rgba(30, 41, 59, 0.8);
 }
 
 .skills-title {

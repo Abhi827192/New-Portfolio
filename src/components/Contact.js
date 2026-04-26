@@ -115,6 +115,7 @@ const Contact = () => {
             <form ref={form} className="contact-form" onSubmit={sendEmail}>
               <div className="form-group">
                 <input
+                  className="clickable-icon1"
                   type="text"
                   name="name"
                   placeholder="Your Name"
@@ -126,6 +127,7 @@ const Contact = () => {
               
               <div className="form-group">
                 <input
+                className="clickable-icon1"
                   type="email"
                   name="email"
                   placeholder="Your Email"
@@ -137,6 +139,7 @@ const Contact = () => {
               
               <div className="form-group">
                 <textarea
+                className="clickable-icon1"
                   name="message"
                   placeholder="Your Message"
                   rows="5"

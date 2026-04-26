@@ -1,8 +1,18 @@
 .footer {
-    background: var(--bg-secondary);
-    padding: 60px 0 30px;
+    background: #000; /* Pure black background */
+    padding: 60px 20px 40px; /* Side padding added */
     margin-top: 100px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+     background: transparent;
+}
+
+/* Isse footer ek clean box shape mein aa jayega */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(0, 41, 59, 0.3); /* Very slight highlight */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Thin box border */
+    border-radius: 20px; /* Rounded corners */
 }
 
 .footer-content {
@@ -14,107 +24,67 @@
     gap: 2rem;
 }
 
-.footer-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.footer-logo {
-    font-size: 1.8rem;
-    font-weight: 800;
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-}
-
-.footer-logo .accent {
-    color: var(--accent-yellow);
-}
-
-.footer-tagline {
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-}
-
 .footer-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
     flex-wrap: wrap;
 }
 
+/* Icon aur Link ki styling */
 .footer-links a {
-    color: var(--text-secondary);
+    color: var(--text-secondary, #003d05);
     text-decoration: none;
     font-weight: 500;
-    transition: var(--transition);
-    position: relative;
-    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    transition: 0.3s ease;
 }
 
-.footer-links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent-yellow);
-    transition: width 0.3s ease;
+.footer-icon {
+    color: var(--accent-yellow, #ffc107); /* Icons will be yellow like your theme */
+    font-size: 1.1rem;
 }
 
 .footer-links a:hover {
-    color: var(--text-primary);
-}
-
-.footer-links a:hover::after {
-    width: 100%;
+    color: #fff;
+    transform: translateY(-3px); /* Subtle lift on hover */
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--text-secondary);
+    color: #a0a0a0;
 }
 
-.footer-bottom p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
+/* Animation for Heart */
 .heart-icon {
     color: #ef4444;
     animation: heartbeat 1.5s infinite;
 }
 
 @keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
+    .footer-container {
+        padding: 20px;
+        margin: 0 10px; /* Small margin on mobile screens */
+    }
+    
     .footer-content {
         flex-direction: column;
         text-align: center;
-        gap: 2.5rem;
-    }
-    
-    .footer-text {
-        min-width: auto;
     }
     
     .footer-links {
         justify-content: center;
     }
-    
-    .footer-bottom p {
-        flex-direction: column;
-        gap: 5px;
-    }
+}
+.accent{
+    color: #ffc107;
 }
