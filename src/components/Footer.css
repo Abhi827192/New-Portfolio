@@ -10,7 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
-    background: rgba(0, 41, 59, 0.3); /* Very slight highlight */
+    background: rgba(26, 2, 2, 0.3); /* Very slight highlight */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Thin box border */
     border-radius: 20px; /* Rounded corners */
 }
